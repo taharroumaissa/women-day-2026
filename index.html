@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+    <title>يوم المرأة العالمي 2026 - تحدّي المعرفة</title>
+    
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Tajawal:wght@300;400;500;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- GSAP for animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- قسم الهيدر المتحرك -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-venus"></i>
+                <span>يوم المرأة 2026</span>
+            </div>
+            <div class="menu-toggle" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#hero">الرئيسية</a></li>
+                <li><a href="#history">التاريخ</a></li>
+                <li><a href="#levels">التحديات</a></li>
+                <li><a href="#contact">تواصل</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- القسم الرئيسي مع الرسوم المتحركة -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="main-title">يوم المرأة العالمي</h1>
+            <h2 class="sub-title">8 مارس 2026</h2>
+            <p class="hero-text">احتفاءً بإنجازات المرأة الجزائرية عبر التاريخ</p>
+            <button class="cta-button" onclick="scrollToSection('history')">
+                <span>اكتشف القصة</span>
+                <i class="fas fa-arrow-down"></i>
+            </button>
+        </div>
+        
+        <!-- صور متحركة للمرأة الجزائرية -->
+        <div class="floating-images">
+            <div class="floating-img img1">
+                <img src="assets/femme 2.jpeg" alt="المرأة الجزائرية 1" onerror="this.src='https://via.placeholder.com/400x400/FFB6C1/FF1493?text=صورة+المرأة'">
+            </div>
+            <div class="floating-img img2">
+                <img src="assets/femme 3.jpeg" alt="المرأة الجزائرية 2" onerror="this.src='https://via.placeholder.com/300x300/FFB6C1/FF1493?text=صورة+المرأة'">
+            </div>
+            <div class="floating-img img3">
+                <img src="assets/femme 1.jpeg" alt="المرأة الجزائرية 3" onerror="this.src='https://via.placeholder.com/200x200/FFB6C1/FF1493?text=صورة+المرأة'">
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تاريخ اليوم العالمي للمرأة -->
+    <section id="history" class="history">
+        <h2 class="section-title">لماذا 8 مارس؟</h2>
+        
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>البداية</h3>
+                    <p>يعود تاريخ اليوم العالمي للمرأة إلى أوائل القرن العشرين، عندما خرجت آلاف النساء في مسيرات للمطالبة بحقوقهن في العمل والتصويت.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>8 مارس 1917</h3>
+                    <p>في مثل هذا اليوم، خرجت النساء في بتروغراد للمطالبة بالخبز والسلام، مما أشعل شرارة الثورة الروسية.</p>
+                </div>
+            </div>
+            
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>1977</h3>
+                    <p>اعترفت الأمم المتحدة رسمياً بيوم 8 مارس كيوم عالمي للمرأة.</p>
+                </div>
+            </div>
+        </div>
+        
+        <!-- النص العربي -->
+        <div class="arabic-text">
+            <h3>يوم المرأة العالمي</h3>
+            <p>يحتفل العالم في 8 مارس من كل عام باليوم العالمي للمرأة، تكريماً لإنجازاتها الاجتماعية والاقتصادية والثقافية والسياسية. وهو يوم يذكرنا بنضال المرأة عبر التاريخ من أجل المساواة والعدالة.</p>
+        </div>
+        
+        <!-- المرأة الجزائرية -->
+        <div class="algerian-women">
+            <h3>المرأة الجزائرية في التاريخ</h3>
+            <div class="women-grid">
+                <div class="woman-card">
+                    <img src="assets/o-DJAMILA-BOUAZZA-facebook.jpg" alt="جميلة بوحيرد" onerror="this.src='https://via.placeholder.com/300x300/FFB6C1/FF1493?text=جميلة+بوحيرد'">
+                    <h4>جميلة بوحيرد</h4>
+                    <p>مناضلة جزائرية في ثورة التحرير</p>
+                </div>
+                <div class="woman-card">
+                    <img src="assets/Hassiba-Boulmerka.jpg" alt="حسيبة بولمرقة" onerror="this.src='https://via.placeholder.com/300x300/FFB6C1/FF1493?text=حسيبة+بولمرقة'">
+                    <h4>حسيبة بولمرقة</h4>
+                    <p>أول امرأة جزائرية تحصل على ميدالية أولمبية</p>
+                </div>
+                <div class="woman-card">
+                    <img src="assets/zhour.jpeg" alt="زهور ونيسي" onerror="this.src='https://via.placeholder.com/300x300/FFB6C1/FF1493?text=زهور+ونيسي'">
+                    <h4>زهور ونيسي</h4>
+                    <p>أول وزيرة في الجزائر</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم مستويات التحدي -->
+    <section id="levels" class="levels">
+        <h2 class="section-title">اختاري مستوى التحدي</h2>
+        
+        <div class="levels-container">
+            <div class="level-card" onclick="startGame('easy')" data-level="easy">
+                <div class="level-icon">
+                    <i class="fas fa-seedling"></i>
+                </div>
+                <h3>سهل</h3>
+                <p>أسئلة عامة عن يوم المرأة</p>
+                <span class="question-count">15 سؤالاً</span>
+            </div>
+            
+            <div class="level-card" onclick="startGame('medium')" data-level="medium">
+                <div class="level-icon">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <h3>متوسط</h3>
+                <p>أسئلة عن تاريخ المرأة في الجزائر</p>
+                <span class="question-count">20 سؤالاً</span>
+            </div>
+            
+            <div class="level-card" onclick="startGame('hard')" data-level="hard">
+                <div class="level-icon">
+                    <i class="fas fa-crown"></i>
+                </div>
+                <h3>صعب</h3>
+                <p>أسئلة متقدمة عن المناضلات الجزائريات</p>
+                <span class="question-count">15 سؤالاً</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم اللعبة (يظهر عند بدء التحدي) -->
+    <section id="game" class="game hidden">
+        <div class="game-header">
+            <div class="level-badge" id="currentLevel"></div>
+            <div class="timer-container">
+                <div class="timer-circle" id="timerCircle">
+                    <span id="timer">30</span>
+                    <small>ثانية</small>
+                </div>
+            </div>
+        </div>
+        
+        <div class="question-container">
+            <h3 id="question"></h3>
+            
+            <div class="question-progress">
+                <div class="progress-bar" id="progressBar"></div>
+            </div>
+            
+            <div class="answer-section">
+                <button class="show-answer-btn" onclick="showAnswer()">
+                    <i class="fas fa-lightbulb"></i>
+                    عرض الإجابة
+                </button>
+                
+                <div class="answer-box" id="answerBox">
+                    <p id="answer"></p>
+                </div>
+                
+                <button class="next-btn" onclick="nextQuestion()">
+                    <span>السؤال التالي</span>
+                    <i class="fas fa-arrow-left"></i>
+                </button>
+            </div>
+        </div>
+        
+        <button class="back-btn" onclick="backToLevels()">
+            <i class="fas fa-arrow-right"></i>
+            العودة للمستويات
+        </button>
+    </section>
+
+    <!-- قسم التواصل الاجتماعي -->
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>تابعونا</h3>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+                <a href="#"><i class="fab fa-tiktok"></i></a>
+            </div>
+            <p>جميع الحقوق محفوظة &copy; 2026 - يوم المرأة العالمي</p>
+        </div>
+    </footer>
+
+    <!-- ملفات الجافاسكريبت -->
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
